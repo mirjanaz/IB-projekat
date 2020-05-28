@@ -78,6 +78,7 @@ public class MailBody {
 		
 		return csv;
 	}
+	//inicjaliyovani vektori iv
 
 	public String getEncMessage() {
 		return encMessage;
