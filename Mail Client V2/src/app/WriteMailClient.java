@@ -111,7 +111,7 @@ public class WriteMailClient extends MailClient {
 				
 			
 			
-			MailBody mb=new MailBody(ciphertextStr, ivParameterSpec1.toString(), ivParameterSpec2.toString(), kriptotxt.toString());
+			MailBody mb=new MailBody(ciphertextStr, Base64.encodeToString(ivParameterSpec1.getIV()), Base64.encodeToString(ivParameterSpec2.getIV()), Base64.encodeToString(kriptotxt));
 			String mbtelo=mb.toCSV();
 			
 

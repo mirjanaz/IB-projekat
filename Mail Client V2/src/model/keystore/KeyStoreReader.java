@@ -97,7 +97,7 @@ public class KeyStoreReader {
 	 *  
 	 * @return Privatni kljuc
 	 */
-	public PrivateKey getPrivateKeyFromKeyStore(KeyStore keyStore, String alias, char[] keyPass) {
+	public static PrivateKey getPrivateKeyFromKeyStore(KeyStore keyStore, String alias, char[] keyPass) {
 		PrivateKey privateKey = null;
 		try {
 			privateKey = (PrivateKey) keyStore.getKey(alias, keyPass);
